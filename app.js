@@ -40,8 +40,8 @@ function main(response){
     playlists.innerHTML = ""
     for(songNames of songs){
        name = songNames.name;
-       path = songNames.path;
-    playlists.innerHTML= playlists.innerHTML + `<li data-file="${path}">
+       paths = songNames.path;
+    playlists.innerHTML= playlists.innerHTML + `<li data-file="${paths}">
     <i class="fa-solid fa-music" style="color: white;"></i>
     <div class="name">${name} </div>
     <div class="play">
